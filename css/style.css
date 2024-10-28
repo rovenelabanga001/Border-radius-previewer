@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+main #element {
+  width: 40vw;
+  height: 40vh;
+  border: 2px solid black;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main form#input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+main form#input-form input {
+  height: 40px;
+  width: clamp(200px, 40vw, 700px);
+  padding: 0 10px;
+  background-color: rgb(235, 233, 233);
+  border: none;
+  outline: none;
+}
+main form#input-form button {
+  height: 40px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
